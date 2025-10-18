@@ -1,55 +1,74 @@
-# Prerequisites
-*.d
+# =========================================================================
+# === C/C++ Projeleri için Profesyonel .gitignore Dosyası             ===
+# =========================================================================
+# Bu dosya, gereksiz dosyaların Git deposuna eklenmesini engeller.
+# Yorum satırları, hangi kuralın ne işe yaradığını açıklar.
 
-# Object files
+# === Projeye Özel Çıktılar ===
+# Bu projede derleme sonucu oluşturulan programlar.
+programim
+finans_takip.exe
+finans_takip
+
+# === Kişisel Veri Dosyaları ===
+# Kullanıcıya özel veriler içeren ve depoya eklenmemesi gereken dosyalar.
+*.db
+*.db-journal
+*.log
+
+# === Derlenmiş Nesne ve Kütüphane Dosyaları ===
+# Kaynak koddan her zaman yeniden oluşturulabilirler.
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
+*.lib
 *.so
-*.so.*
+*.dll
 *.dylib
 
-# Executables
-*.exe
+# === Genel Çalıştırılabilir Dosyalar ===
+# Farklı işletim sistemlerindeki standart program çıktıları.
 *.out
+*.exe
 *.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# === Popüler Build Sistemleri ve IDE Klasörleri ===
+# CMake, Make, VS, CLion gibi araçların oluşturduğu geçici klasörler.
+/build/
+/bin/
+/Debug/
+/Release/
+/.vs/
+/.idea/
+*.cmake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# === Editöre Özel Yapılandırma ve Geçici Dosyalar ===
 
-# debug information files
-*.dwo
+# Visual Studio Code (Sadece kullanıcıya özel ayarları yok say)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Vim, Emacs ve diğer editörlerin yedek dosyaları
+*.swp
+*~
+*.bak
+*.tmp
+
+# === İşletim Sistemine Özgü Dosyalar ===
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+```eof
