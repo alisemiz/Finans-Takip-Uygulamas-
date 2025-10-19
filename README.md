@@ -25,7 +25,7 @@ Uygulama, kullanıcıların gelir ve giderlerini kategorilere ayırarak kaydetme
 1.  **Depoyu Klonlayın:**
 
     ```bash
-    git clone [https://github.com/alisemiz/Finans-Takip-Uygulamas-.git](https://github.com/alisemiz/Finans-Takip-Uygulamas-.git)
+    git clone [https://github.com/alisemiz/Finans-Takip-Uygulamas-.git]
     ```
 
 2.  **Klasöre Gidin:**
